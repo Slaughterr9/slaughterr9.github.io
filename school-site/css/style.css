@@ -80,16 +80,18 @@ header, footer {
 /* Imported Typfaces */
 
 @font-face {
-    font-family:montserrat;
+   
     src: url(../fonts/montserrat-regular.ttf);
-    font-style:normal;
+    font-style:normal; 
+    font-family:montserrat;
     font-weight:normal;
 }
 @font-face {
-    font-family:josefinslab;
+    
     src: url(../fonts/josefinslab-regular.ttf);
     font-style:normal;
     font-weight:normal;
+    font-family:josefinslab;
 }
 /* Typography Styles */
 html {
@@ -97,11 +99,10 @@ html {
 }
 
 h1{ letter-spacing: .125rem;
-    font-family: 'josefinslab';
     font-size: 3.75rem;
     margin: 1.125rem;
-    text-align: center   
-}
+    text-align: center;
+    font-family: 'josefinslab';}
 
 h2{ letter-spacing: .125rem;
     font-family: 'josefinslab';
@@ -128,31 +129,27 @@ figcaption {font-size: .75rem;
 
 /* Link Styling */
 
-a {outline: none;
-}
+a {outline: none;}
 
 a:link,
-a:visited {color: #33658A;
-}
+a:visited {color: #33658A;}
 
 a:focus,
-a:hover {text-decoration: none;
-}
+a:hover {text-decoration: none;}
 
 
 /* List Styling */
 
-ul {margin-top: 1rem;
+ul { list-style-type: square;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0rem;
+    margin-left: 0rem;}
+   
+ol{ margin-right: 0rem;
+    margin-top: 1rem;
     padding-bottom: 1rem;
     margin-left: 0rem;
-    margin-right: 0rem;
-    list-style-type: square;
-}
-
-ol{ margin-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
     list-style-type: lower-alpha;
 }
 
@@ -173,8 +170,8 @@ nav a {text-decoration: none;
        line-height: 3;
        text-align: center;
        font-size: 1.125rem;
-       margin-bottom: 1.5rem;
        border: solid;
+       margin-bottom: 1.5rem;
        border-width: .0625rem;
        border-color: #33658A;
 }
