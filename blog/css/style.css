@@ -1,0 +1,213 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+@font-face {
+    font-family: lato;
+    src: url(../fonts/sans-serif/lato-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:montserrat;
+    src: url(../fonts/sans-serif/montserrat-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:opensans;
+    src: url(../fonts/sans-serif/opensans-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family:roboto;
+    src: url(../fonts/sans-serif/roboto-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family:rozhaone;
+    src: url(../fonts/serif/rozhaone-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:ultra;
+    src: url(../fonts/serif/ultra-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+
+*
+html {
+    font-family: 'lato';
+    font-size:16px;
+}
+
+h1{
+    letter-spacing: .125rem;
+    font-size: 3.75rem;
+    margin: 1.125rem;
+    text-align: center;
+    transform: rotate(5deg);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-family: 'rozhaone';
+}
+h1 > span { 
+    background-color:crimson;
+    font-family: 'ultra';
+    color: whitesmoke;
+    
+}
+            
+nav{
+    font-family: 'lato';
+    word-spacing: 1rem;
+    float: left;
+    text-align: left;
+    border-top: 1rem solid black;
+    border-bottom: 1rem solid black;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    
+}
+nav a{
+    text-decoration: none;
+}
+         
+
+h2{
+    font-size: 2rem;
+    margin-top: 5rem;
+    font-family: "lato";
+}
+
+main-section{
+    float: right;
+    width: 100%;
+    margin: 1rem;
+    max-width: 60%;
+}
+article{
+    float: left;
+    width: 70%;
+}
+
+.subsection{
+    bottom: 3rem;
+    display: inline-block; 
+}
+
+.subsection > img { 
+    max-width: 20%;
+    
+}
+.row{
+    display:flex;
+    max-width: 80%;   
+}
+.column{
+    flex:30%;
+    float:left;
+    padding: .125rem;
+    
+}
+figure{ width:100%;
+    float:left;
+}
+
+.subsection> figure{ 
+    width: 20%;
+    display: inline-block;
+}
+
+figcaption{
+}
+
+button{
+    font-family: 'lato';
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+
+}
+aside{
+    flex: right;
+    float: right;
+    width: 30%;
+}
+
+
+.expand{
+    text-decoration: none; 
+}
+
+.copy{
+    text-align: left;
+}
+footer>p{
+    clear: both;
+    margin-top: 1.5rem;
+    bottom: 0;  
+    text-align: right;
+    color: black;
+    }
+footer a{
+    text-decoration: none;
+    color: black;
+   
+}
+          
+            
